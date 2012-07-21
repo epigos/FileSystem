@@ -1,0 +1,129 @@
+<!doctype html>
+<!-- The Time Machine GitHub pages theme was designed and developed by Jon Rohan, on Feb 7, 2012. -->
+<!-- Follow him for fun. http://twitter.com/jonrohan. Tail his code on http://github.com/jonrohan -->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen"/>
+  <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="javascripts/script.js"></script>
+
+  <title>PHP Filesystem</title>
+  <meta name="description" content="PHP,File, System, php file system object, php file system class, php file system functions">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header>
+      <h1 class="title">PHP Filesystem</h1>
+    </header>
+    <div id="container">
+      <p class="tagline">PHP,File, System, php file system object, php file system class, php file system functions</p>
+      <div id="main" role="main">
+        <div class="download-bar">
+        <div class="inner">
+          <a href="https://github.com/epigos/FileSystem/tarball/master" class="download-button tar"><span>Download</span></a>
+          <a href="https://github.com/epigos/FileSystem/zipball/master" class="download-button zip"><span>Download</span></a>
+          <a href="https://github.com/epigos/FileSystem" class="code">View PHP Filesystem on GitHub</a>
+        </div>
+        <span class="blc"></span><span class="trc"></span>
+        </div>
+        <article class="markdown-body">
+          <h1>FileSystem</h1>
+
+<p>FileSystem  is a singleton PHP object which provides convenience methods for managing the file system in PHP. </p>
+
+<p>This PHP object contains eleven(11) methods:</p>
+
+<pre><code>1."getExtension" - Returns the extention of the specified file.
+2."Read" - Reads entire file.
+3. "Write" - Write data to a file.
+4. "createDirectory" - create a folder in the specified path.
+5. "Delete" - Deletes a file or a folder.
+6. "Copy" - copies files from one directory to another.
+7. "move" - move files from one directory to another.
+8. "Listing" - list all the files in a given directory.
+9. "rmdirContent" - removes all the content in a given folder.
+10. "remove" - removes a specified file or folder.
+11. "findByExtension" - Find the specified extension in the directory.
+</code></pre>
+
+<h2>Basic Example</h2>
+
+<p>You can get the object's instance using the static {<a href="https://github.com/link" class="user-mention">@link</a> getInstance()} method.   </p>
+
+<pre><code>&lt;?php
+
+include "filesystem.php";
+$file = FileSystem::getInstance();
+$fileExt=$file -&gt;getExtension("foobar.txt");
+echo $fileExt; // txt
+
+?&gt;
+</code></pre>
+
+<p>Read file content
+        &lt;?php</p>
+
+<pre><code>     Local file :
+     $data=$file -&gt;Read("foobar.txt");
+     echo $data;
+
+     Reomte file:
+     $data=$file -&gt;Read("http://www.google.com.gh/",TRUE);
+     echo $data;
+
+     ?&gt;
+</code></pre>
+
+<h2>License</h2>
+
+<p>Copyright (C) 2012 by philipcodings.com</p>
+
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:</p>
+
+<p>The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.</p>
+
+<p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.</p>
+        </article>
+      </div>
+    </div>
+    <footer>
+      <div class="owner">
+      <p><a href="https://github.com/epigos" class="avatar"><img src="https://secure.gravatar.com/avatar/60ea7d04d2b483d54c464822965cbd12?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png" width="48" height="48"/></a> <a href="https://github.com/epigos">epigos</a> maintains <a href="https://github.com/epigos/FileSystem">PHP Filesystem</a></p>
+
+
+      </div>
+      <div class="creds">
+        <small>This page generated using <a href="https://pages.github.com/">GitHub Pages</a><br/>theme by <a href="http://twitter.com/jonrohan/">Jon Rohan</a></small>
+      </div>
+    </footer>
+  </div>
+  <div class="current-section">
+    <a href="#top">Scroll to top</a>
+    <a href="https://github.com/epigos/FileSystem/tarball/master" class="tar">tar</a><a href="https://github.com/epigos/FileSystem/zipball/master" class="zip">zip</a><a href="" class="code">source code</a>
+    <p class="name"></p>
+  </div>
+
+  
+</body>
+</html>
